@@ -1,3 +1,4 @@
+import 'package:addone/favorutes_manager.dart';
 import 'package:flutter/material.dart';
 
 main(List<String> args) {
@@ -12,6 +13,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: Text("Adfun"),
+        ),
+        body: Column(
+          children: [
+            Container(padding: EdgeInsets.all(10), child: Favorites()),
+          ],
         ),
       ),
     );
